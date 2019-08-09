@@ -1,0 +1,194 @@
+@CHARSET "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html,body{
+	height:100%;
+	width:100%;
+	font-family:'Poppins',sans-serif;
+	color:#222;
+}
+#navbarResponsive{
+	
+
+	padding:3px 20px 3px 50px ;
+
+}
+
+.navbar{
+	position: fixed;
+		
+}
+.space{
+	padding:10px 0px 10px 800px;
+
+}
+.navbar-nav li{
+	padding-right:20px;
+} 
+}
+.nav-link{
+	font-size: 1.1em !important;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  
+}
+
+.carousel-inner img{
+	width: 100%;
+	height:auto;
+
+}
+.carousel-caption{
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+}
+.carousel-caption h1{
+	font-size: 500%;
+	text-transform: uppercase;
+	text-shadow: 1px,1px,15px #000;
+}
+.padding{
+	padding-bottom: 0m;
+}
+.social a{
+	font-size:4em;
+	padding:1em;
+
+}
+.fa-facebook{
+	color:#3b5998;
+
+}
+.fa-twitter{
+	color:#00aced;
+}
+.fa-linkedin-in{
+	color:#dd4b39;
+}
+.fa-instagram{
+	color:#517fa4;
+}
+.fa-youtube{
+	color:#bb00000;
+}
+
+.fa-facebook:over,
+.fa-twitter:over,
+.fa-linkedin-in:over,
+.a-instagram:over,
+.fa-youtube:over{
+	color:#d5d5d5;
+}
+footer{
+	background-color:#3f3f3f;
+	color:#d5d5d5;
+	padding-top: 1em;
+
+hr.light{
+	border-top: :1px solid #d5d5d5;
+	width: 75;
+	margin:100%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+
+}
+footer a{
+	color:#d5d5d5;
+}
+hr.light-100{
+	border-top: :1px solid #d5d5d5;
+	width: 100%;
+	margin:100%;
+	margin-top: .8rem;
+	margin-bottom: 1rem;
+}
+
+
+
+/*---Media Queries--*/
+@media(max-width:992px){
+
+}
+
+@media(max-width:768px){
+
+}
+
+@media(max-width:576px){
+
+}
+
+
+
+/*---Firefox debug--*/
+.carousel-item{
+	transition: -webkit-transform 0.5s ease;
+	transition: transform 0.5s ease;
+	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+	-webkit-backface-visibility:visible;
+	backface-visibility:visible;
+}
+
+/*---Fixed Background image--*/
+figure{
+	position:relative;
+	width:100%;
+	height:60%
+	margin:0!important;
+}
+.fixed-wrap{
+	clip:react(0,auto,auto,0);
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+#fixed{
+	background-image:url('');
+	position:fixed;
+	display:block;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-size: cover;
+	background-position: center center;
+	-webkit-transform:translateZ(0);
+			transform:translateZ(0);
+	will-change:transform;
+}
+
+/*---Bootstrap padding Fix --*/
+
+[class*="col-"]{
+	padding:1rem;
+}
+/*.icon-spacing: {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #A0C5E8;
+  padding: 10px 0;
+}*/
+
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    visibility: hidden;
+    display: none;
+    background-color: rgba(22,22,22,0.5); /* complimenting your modal colors */
+}
+.container:target {
+    visibility: visible;
+    display: block;
+}
