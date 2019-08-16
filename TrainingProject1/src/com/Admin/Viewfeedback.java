@@ -14,17 +14,19 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/viewfeedback")
 
-public class Viewfeedback extends HttpServlet {
+public class Viewfeedback extends HttpServlet 
+{
 	private static final long serialVersionUID = 1L;
 
     
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
 	{
-		try {
+		try 
+		{
 			response.setContentType("text/html");
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","rakshi","rakshi98");
-			String sql=("select * from feedback");
+			Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","kavi","k123");
+			String sql=("select * from Efeedback");
 			PreparedStatement pst=con.prepareStatement(sql);
 			ResultSet rs=pst.executeQuery();
 			PrintWriter out=response.getWriter();
