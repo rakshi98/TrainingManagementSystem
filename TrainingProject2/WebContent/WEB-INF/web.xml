@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Newproject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Feedbackcontroller</display-name>
+    <servlet-name>Feedbackcontroller</servlet-name>
+    <servlet-class>com.virtusa.training_management.controllers.Feedbackcontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Feedbackcontroller</servlet-name>
+    <url-pattern>/Feedbackcontroller</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Emp_posttraining</display-name>
+    <servlet-name>Emp_posttraining</servlet-name>
+    <servlet-class>com.virtusa.training_management.controllers.Emp_posttraining</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Emp_posttraining</servlet-name>
+    <url-pattern>/Emp_posttraining</url-pattern>
+  </servlet-mapping>
+</web-app>
