@@ -43,7 +43,7 @@ public class Emp_posttrainingcontroller extends HttpServlet {
 		 {
 			out.println("<script type=\"text/javascript\">");
 			out.println("alert('Posted Sucessfully');");
-			out.println("location='Emp_Home.jsp';");
+			out.println("location='Admin_profile.jsp';");
 			out.println("</script>");
 	/*
 	 * request.getRequestDispatcher("/Emp_Home.jsp");//RequestDispatcher is used to
@@ -52,7 +52,7 @@ public class Emp_posttrainingcontroller extends HttpServlet {
 		 else
 		 {
 			out.println("<script type=\"text/javascript\">");
-			out.println("alert('Posted Sucessfully');");
+			out.println("alert('UnSucessfull');");
 			out.println("location='Emp_error.jsp';");
 			out.println("</script>");
 		 }		

@@ -72,7 +72,7 @@
 <div class="form-group row">
 <label for="phone_number" class="col-md-4 col-form-label text-md-right">Phone Number</label>
 <div class="col-md-6">
-<input type="text" id="phone_number" class="form-control" name="phonenumber">
+<input type="number" id="phone_number" class="form-control" name="phonenumber">
 </div>
 </div>
 

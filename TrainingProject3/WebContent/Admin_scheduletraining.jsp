@@ -114,7 +114,7 @@
 	
 								<div class="panel-body">
 	
-									<form onsubmit="return validform()" action="Admin_Scheduletrainingcontroller" method="post">
+									<form action="Admin_Scheduletrainingcontroller" method="post">
 	
 										<div class="form-group row">
 											<label for="trainingid"

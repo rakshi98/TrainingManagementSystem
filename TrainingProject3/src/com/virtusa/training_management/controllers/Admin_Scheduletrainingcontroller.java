@@ -9,17 +9,18 @@ import com.virtusa.training_management.models.Admin_Scheduletraining;
 import com.virtusa.training_management.service.Admin_Scheduletrainingservice;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//@WebServlet("/Admin_Scheduletrainingcontroller")  
+@WebServlet("/Admin_Scheduletrainingcontroller")  
 public class Admin_Scheduletrainingcontroller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     
 	protected void doPostt(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		String trainingid1=request.getParameter("trainingid");
 		String trainingtitle1=request.getParameter("trainingtitle");
 		String domain1=request.getParameter("domain");
@@ -46,7 +47,7 @@ public class Admin_Scheduletrainingcontroller extends HttpServlet {
 		 {
 //			out.println("<script type=\"text/javascript\">");
 			out.println("<script>alert('Posted Sucessfully');</script>");
-			request.getRequestDispatcher("/Admin_Scheduletraining.jsp");
+			request.getRequestDispatcher("/Admin_scheduletraining.jsp");
 			/*
 			 * out.println("location='Admin_feedback.jsp';");
 			 */			/*
