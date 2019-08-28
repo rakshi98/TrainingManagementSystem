@@ -43,7 +43,7 @@ public class Emp_posttrainingcontroller extends HttpServlet {
 		 {
 			out.println("<script type=\"text/javascript\">");
 			out.println("alert('Posted Sucessfully');");
-			out.println("location='Admin_profile.jsp';");
+			out.println("location='Emp_Home.jsp';");
 			out.println("</script>");
 	/*
 	 * request.getRequestDispatcher("/Emp_Home.jsp");//RequestDispatcher is used to

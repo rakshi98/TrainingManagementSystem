@@ -51,7 +51,7 @@ HttpSession session1=request.getSession(false);
 String empid=(String)session1.getAttribute("empid");
 String empusername=(String)session1.getAttribute("empusername");
 String empemailid=(String)session1.getAttribute("empemailid");
-int empphone=(int)session1.getAttribute("empphone"); 
+Integer empphone=(Integer)session1.getAttribute("empphone"); 
 String empdesignation=(String)session1.getAttribute("empdesignation"); 
 %>
 
