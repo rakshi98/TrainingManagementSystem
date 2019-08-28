@@ -233,7 +233,7 @@
 								</div>
 
 								<div class="form-group">
-									<label class=" control-label col-sm-2" for="f_name"><B>Full
+									<label class=" control-label col-sm-2" for="f_name"><B>
 											Name</B></label>
 									<div class="col-sm-10">
 										<input type="text" id="usrfname" class="form-control"
