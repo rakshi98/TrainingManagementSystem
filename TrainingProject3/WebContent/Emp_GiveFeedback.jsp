@@ -88,7 +88,7 @@ padding:100px;}
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Training<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="Emp_ApplyTraining.jsp">Apply</a></li>
+            <li><a href="/TrainingProject3/Demo">Apply</a></li>
             <li><a href="Emp_PostTraining">Post</a></li>
           </ul>
         </li>
