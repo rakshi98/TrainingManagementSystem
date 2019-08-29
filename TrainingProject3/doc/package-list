@@ -1,0 +1,5 @@
+com.virtusa.training_management.DAO
+com.virtusa.training_management.controllers
+com.virtusa.training_management.helpers
+com.virtusa.training_management.models
+com.virtusa.training_management.service

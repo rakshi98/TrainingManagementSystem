@@ -1,13 +1,17 @@
    <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
     <%@ page import="java.util.ArrayList" %>
     <%@ page import="com.virtusa.training_management.models.Admin_Scheduletraining" %>
-    <% ArrayList<Admin_Scheduletraining> results= new ArrayList<Admin_Scheduletraining>();%>
-    <% request.getAttribute("results");  %>
+    <% ArrayList results=(ArrayList)request.getAttribute("results");  %>
 <!DOCTYPE html>    
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -23,11 +27,11 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Home</a></li>
+        <li ><a href="Emp_Home.jsp">Home</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Training<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="Demo.jsp">Apply</a></li>
+            <li><a class="active" href="/TrainingProject3/Demo">Apply <span class="sr-only">(current)</span></a></li>
             <li><a href="Emp_PostTraining.jsp">Post</a></li>
           </ul>
         </li>

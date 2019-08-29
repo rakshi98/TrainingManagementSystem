@@ -31,9 +31,7 @@ public class Demo extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		  request.setAttribute("results",new Emp_get().getdata());
 		  RequestDispatcher rd=request.getRequestDispatcher("NewFile.jsp");
-		  rd.forward(request,response);
-		  
-		  
+		  rd.forward(request,response);	  
 	}
 
 	/**
