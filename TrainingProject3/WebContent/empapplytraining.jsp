@@ -1,56 +1,20 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-  <%@ page import="java.util.ArrayList" %>
+   <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+    <%@ page import="java.util.ArrayList" %>
     <%@ page import="com.virtusa.training_management.models.Admin_Scheduletraining" %>
     <% ArrayList results=(ArrayList)request.getAttribute("results");  %>
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>    
+<html>
 <head>
-  <title>Apply Training</title>
+<title>Apply Training</title>
   <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="./styles/empapplytraining.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <style>
-  
-  * {
-  box-sizing: border-box;
-}
-
-#myInput 
-{
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 20px;
-  border: 1px solid #ddd;
-  margin-bottom: 25px;
-}
-#myTable 
-{
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid #ddd;
-  
-  font-size: 18px;
-}
-#myTable th, #myTable td 
-{
-  text-align: left;
-  padding: 12px;
-}
-#myTable tr 
-{
-  border-bottom: 1px solid #ddd;
-}
-#myTable tr.header, #myTable tr:hover 
-{
-  background-color: #f1f1f1;
-}
-  </style>
 </head>
-<body>
 
+<body>
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -80,15 +44,15 @@
   </div>
 </nav>
 
+
 <table id="myTable">
 <tr class="header">
-<th style="width:60; font-weight:bold;">Training ID</th>
-<th style="width:60; font-weight:bold;">Training Name</th>
-<th style="width:40; font-weight:bold;">Domain</th>
-<th style="width:40; font-weight:bold;">Start Date</th>
-<th style="width:40; font-weight:bold;">End Date</th>
-<th style="width:40; font-weight:bold;">Venue</th>
-<th style="width:40; font-weight:bold;">Status</th>
+<th style="width:60; font-weight:bold;">id</th>
+<th style="width:60; font-weight:bold;">title</th>
+<th style="width:60; font-weight:bold;">domain</th>
+<th style="width:60; font-weight:bold;">startdate</th>
+<th style="width:60; font-weight:bold;">enddate</th>
+<th style="width:60; font-weight:bold;">venue</th>
 </tr>
 <%for (int recordcnt=0; recordcnt < results.size(); recordcnt++)
 { 
@@ -102,6 +66,7 @@
 <td><%=ad.getStartdate() %></td>
 <td><%=ad.getEnddate() %></td>
 <td><%=ad.getVenue() %></td>
+
 </tr>
 <% } %>
 

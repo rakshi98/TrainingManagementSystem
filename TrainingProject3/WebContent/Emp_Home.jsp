@@ -9,7 +9,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   
-<link href="Emp_profile.css" rel="stylesheet">
+<link href="./empprofile.css" rel="stylesheet">
 <style>
 
 .edit_modal

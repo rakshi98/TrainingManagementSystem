@@ -30,7 +30,7 @@ public class Demo extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		  request.setAttribute("results",new Emp_get().getdata());
-		  RequestDispatcher rd=request.getRequestDispatcher("Emp_ApplyTraining.jsp");
+		  RequestDispatcher rd=request.getRequestDispatcher("empapplytraining.jsp");
 		  rd.forward(request,response);	  
 	}
 
